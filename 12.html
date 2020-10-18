@@ -1,0 +1,200 @@
+<html>
+    <head>
+        <style type="text/css">
+         tr:nth-child(2n+3) {
+            background: #bbbbbb;
+            }
+            
+          
+        tr:nth-child(-n+4),.f {
+            color: #ff0000;
+            }
+        tr:nth-child(1) {
+             background: #000000;
+             color: #ffffff;
+         }
+        input{
+            width: 200px;
+            transition: all 0.1s ;
+        }
+     
+        input:focus {
+            width: 400px;
+        }
+
+        #luo {
+            position: relative;
+            overflow: hidden;
+            width: 300px;
+            height: 100px;
+        }
+        
+        #one {
+            position: absolute;
+            left: 0;
+            width: 900px;
+            height: 100px;
+            -webkit-animation: aa linear 5s infinite;
+        }
+
+        #one_1 {
+            background: green;
+        }
+        
+        #two {
+            left: 300px;
+        }
+        
+        #two-1 {
+            height: 100px;
+            width: 150px;
+            background: green;
+        }
+        
+        #two-2 {
+            position: relative;
+            left: 150px;
+            bottom: 100px;
+            height: 100px;
+            width: 150px;
+            background: blue;
+        }
+        
+        #three {
+            left: 600px;
+            background: blue;
+        }
+        
+                
+        .four {
+            position: absolute;
+            display: inline-block;
+            height: 100px;
+            width: 300px;
+        }
+        
+
+        @-webkit-keyframes aa {
+            0% {left: 0;}
+            28% {left: 0;}
+            35% {left: -300px;}
+            63% {left: -300px;}
+            70% {left: -600px;}
+            98% {left: -600px;}
+            100% {left: 0;}
+        }
+        
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .five {
+            position: relative;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            bottom: 25px;
+            left: 180px;
+            background-color: #000000;
+            opacity: 0.5;
+            line-height: 20px;
+            text-align: center;
+        }
+        
+        #five_1:target {
+            left: 0;
+            -webkit-animation: .1s 1;
+        }
+        
+        #five_2:target {
+            left: 0;
+            -webkit-animation: .1s 1;
+        }
+        
+        #five_3:target {
+            left: 0;
+            -webkit-animation: .1s 1;
+        } 
+        </style>
+    </head>
+    <body>
+        <table class="table">
+            <tr>
+                <td>排名</td>
+                <td>网站</td>
+                <td>热度</td>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>坎帕斯前端学院</td>
+                <td>13000</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>坎帕斯前端学院</td>
+                <td>12000</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>坎帕斯前端学院</td>
+                <td>11000</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>坎帕斯前端学院</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td class="f">坎帕斯前端学院</td>
+                <td>9000</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>坎帕斯前端学院</td>
+                <td>8000</td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>坎帕斯前端学院</td>
+                <td>7000</td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td>坎帕斯前端学院</td>
+                <td>6000</td>
+            </tr>
+            <tr>
+                <td>9.</td>
+                <td>坎帕斯前端学院</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>10.</td>
+                <td>坎帕斯前端学院</td>
+                <td>4000</td>
+            </tr>
+        </table><br>
+
+        <input type="text" class="input">
+        <br><br>
+
+        <div id="luo">
+            <div id="one">
+                <div id="one_1" class="four">
+            </div>
+            <div id="two" class="four">
+                <div id="two-1"></div>
+                <div id="two-2"></div>
+            </div>
+                <div id="three" class="four"></div>
+            </div>
+        </div>
+        <div id="five">
+            <div id="five_1" class="five"><a href="#one" id="a1">1</a></div>
+            <div id="five_2" class="five"><a href="#two" id="a2">2</a></div>
+            <div id="five_3" class="five"><a href="#three" id="a3">3</a></div>
+        </div>
+    </body>
+</html>
